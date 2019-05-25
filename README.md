@@ -22,15 +22,15 @@ Lá tem todas as opções de Cadastro, Consulta e Pesquisa dos POIs, de forma in
 
 Caso não queira usar a tela, pode usar o serviço.
 Para cadastrar uma coordenada atraves de um serviço, é só colocar os parametros na URL
- * http://xyinc-app.us-west-2.elasticbeanstalk.com/service/cadastrarCoordenada/{nome}/{latitude}/{longitude}
+ * http://xyinc-app.us-west-2.elasticbeanstalk.com/v1/coordenadas/cadastrarCoordenada/{nome}/{latitude}/{longitude}
   esse metodo retorna o JSON do objeto cadastrado
   
   
 Para consultar todas coordenadas atraves do serviço, é só chamar a URL
- * http://xyinc-app.us-west-2.elasticbeanstalk.com/service/listar
+ * http://xyinc-app.us-west-2.elasticbeanstalk.com/v1/coordenadas/listar
   esse metodo retorna o JSON de todos os objetos cadastrados
   
   
 Para consultar os POIs proximos, baseado em uma determinada posição, atraves do serviço, é só colocar os parametros na URL
- * http://xyinc-app.us-west-2.elasticbeanstalk.com//service/filtrarPOIs/{latitude}/{longitude}/{distanciaMax}"
+ * http://xyinc-app.us-west-2.elasticbeanstalk.com/v1/coordenadas/filtrarPOIs/{latitude}/{longitude}/{distanciaMax}
   esse metodo retorna o JSON com todos os POIs 
